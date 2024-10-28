@@ -22,7 +22,7 @@ const settingsMenu = [
   ]
 DATABASE_URL = process.env.DATABASE_URL === undefined ? './bot.db' : process.env.DATABASE_URL;
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
-if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("Raganork~11fbfd23f17ad63c711fefafe83a397d:78536877785757643549413d")
+if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("Raganork~1f731c8eb3fcc3db323dd4a77586284b:736f494d314f77344350513d")
 module.exports = {
     VERSION: 'v4.0.0',
     ALIVE: process.env.ALIVE || "https://iili.io/dmKqfTP.jpg Hey {sender}, I'm alive \n Uptime: {uptime}",
@@ -73,7 +73,7 @@ module.exports = {
     DATABASE_URL: DATABASE_URL,
     DATABASE: DATABASE_URL === './bot.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
     SUDO: process.env.SUDO || "22502331988",
-    LANGUAGE: process.env.LANGUAGE || 'english',
+    LANGUAGE: process.env.LANGUAGE || 'french',
     DEBUG: DEBUG,
     ACR_A: "ff489a0160188cf5f0750eaf486eee74",
     ACR_S: "ytu3AdkCu7fkRVuENhXxs9jsOW4YJtDXimAWMpJp",
